@@ -6,6 +6,7 @@ version: "3.8"
 services:
   mc:
     image: itzg/minecraft-server:${IMAGE_TAG:-latest}
+    command: /var/log
     restart: unless-stopped
     volumes:
       - /minecraft-data/modpacks:/modpacks:ro
@@ -21,6 +22,11 @@ services:
       OPS: |
         DocNastyDub
         _zinefer
+      WHITELIST: |
+        DocNastyDub
+        _zinefer
+        rothberry
+        RayJayP
       ALLOW_FLIGHT: "true"
     ports:
       - "25565:25565"
