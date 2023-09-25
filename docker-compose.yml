@@ -6,16 +6,21 @@ version: "3.8"
 services:
   mc:
     image: itzg/minecraft-server:${IMAGE_TAG:-latest}
+    restart: unless-stopped
     volumes:
-      - ./modpacks:/modpacks:ro
+      - /minecraft-data/modpacks:/modpacks:ro
+      - /minecraft-data/data:/data
     environment:
       EULA: "true"
-      TYPE: CURSEFORGE
-      VERSION: 1.20.1
-      CF_SERVER_MOD: /modpacks/BMC4_FORGE_1.20.1_Server_Pack_v14.zip
       MEMORY: 4G
       ENABLE_AUTOPAUSE: "true"
+      VERSION: 1.20.1
+      TYPE: CURSEFORGE
+      CF_SERVER_MOD: /modpacks/BMC4_FORGE_1.20.1_Server_Pack_v14.zip
       MOTD: "Invest in Craigs Anal Face Cream Today!"
+      OPS: |
+        DocNastyDub
+        _zinefer
       ALLOW_FLIGHT: "true"
     ports:
       - "25565:25565"
