@@ -29,6 +29,7 @@ services:
         _zinefer
         rothberry
         RayJayP
+        Bronco137
       ALLOW_FLIGHT: "true"
     ports:
       - "25565:25565"
