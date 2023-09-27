@@ -18,8 +18,6 @@ services:
       TYPE: CURSEFORGE
       CF_SERVER_MOD: /modpacks/BMC4_FORGE_1.20.1_Server_Pack_v14.zip
       ICON: https://raw.githubusercontent.com/zinefer/gottapunchrocks/master/pve-server-logo.png
-      ENABLE_AUTOPAUSE: "true"
-      AUTOPAUSE_TIMEOUT_EST: 600
       OVERRIDE_ICON: "true"
       MOTD: "Welcome Ho\u00a7kYou Will Die"
       PVP: "false"
@@ -32,6 +30,8 @@ services:
         rothberry
         RayJayP
         Bronco137
+        blalex93
+        TheWrat
       ALLOW_FLIGHT: "true"
     ports:
       - "25565:25565"
