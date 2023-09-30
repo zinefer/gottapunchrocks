@@ -9,8 +9,8 @@ services:
     command: /var/log
     restart: unless-stopped
     volumes:
-      - /minecraft-data/modpacks:/modpacks:ro
-      - /minecraft-data/data:/data
+      - /minecraft-data/gprpve/modpacks:/modpacks:ro
+      - /minecraft-data/gprpve/data:/data
     environment:
       EULA: "true"
       MEMORY: 8G
