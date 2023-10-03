@@ -6,6 +6,7 @@ services:
     command: /var/log
     restart: unless-stopped
     volumes:
+      - /minecraft-data/gprpve/downloads:/downloads
       - /minecraft-data/gprpve/modpacks:/modpacks:ro
       - /minecraft-data/gprpve/data:/data
     environment:
