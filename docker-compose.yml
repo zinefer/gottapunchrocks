@@ -32,6 +32,7 @@ services:
         Bronco137
         blalex93
         TheWrat
+        ericthegreat1212
       ALLOW_FLIGHT: "true"
     ports:
       - "25565:25565"
