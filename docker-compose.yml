@@ -16,7 +16,7 @@ services:
       DEBUG_MEMORY: "true"
       VERSION: 1.20.1
       TYPE: AUTO_CURSEFORGE
-      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4/files/4761138
+      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4/files/7818388
       ICON: https://raw.githubusercontent.com/zinefer/gottapunchrocks/master/pve-server-logo.png
       OVERRIDE_ICON: "true"
       MOTD: "Welcome Ho\u00a7kYou Will Die"
@@ -33,6 +33,9 @@ services:
         blalex93
         TheWrat
         ericthegreat1212
+        gogosibicle
+        thunderbobcat
+        teku
       ALLOW_FLIGHT: "true"
     ports:
       - "25565:25565"
