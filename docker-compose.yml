@@ -16,6 +16,8 @@ services:
       DEBUG_MEMORY: "true"
       VERSION: 1.20.1
       TYPE: AUTO_CURSEFORGE
+      CF_EXCLUDE_MODS: |
+        colorwheel
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4/files/7818388
       ICON: https://raw.githubusercontent.com/zinefer/gottapunchrocks/master/pve-server-logo.png
       OVERRIDE_ICON: "true"
